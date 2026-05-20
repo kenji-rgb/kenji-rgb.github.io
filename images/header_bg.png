@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="ja"><!-- InstanceBegin template="/Templates/main.dwt" codeOutsideHTMLIsLocked="false" --> <!--<![endif]-->
+<head>
+<meta charset="utf-8" />
+
+<meta name="viewport" content="width=device-width" />
+<title>UMIN 404 Page not found</title>
+<link rel="stylesheet" href="/ErrPage/Message/stylesheets/foundation.css">
+<link rel="stylesheet" href="/ErrPage/Message/stylesheets/app.css">
+<link rel="stylesheet" href="/ErrPage/Message/stylesheets/missing.css">
+
+<script src="/ErrPage/Message/javascripts/modernizr.foundation.js"></script>
+</head>
+<body>
+<a id="top"></a>
+
+<header>
+<div class="row">
+	<div class="eight columns">
+		<h1><a href="http://www.umin.ac.jp/"><img src="/ErrPage/Message/images/logo.gif" alt="医学情報・医療情報　UMIN" /></a></h1>
+	</div>
+	<div class="four columns">
+		<ul class="link-list right">
+			<li><a href="http://www.umin.ac.jp/english/"><img src="/ErrPage/Message/images/icons/gif/16x16/cosmos.gif" alt="English" /> English</a></li>
+			<li><a href="http://www.umin.ac.jp/"><img src="/ErrPage/Message/images/icons/gif/16x16/home.gif" alt="ホーム" /> ホーム</a></li>
+			<li><a href="http://www.umin.ac.jp/faq/"><img src="/ErrPage/Message/images/icons/gif/16x16/help.gif" alt="お問い合せ" /> お問い合せ</a></li>
+		</ul>
+		<!-- Postfix action -->
+		<div class="row collapse">
+			<form method="get" action="http://www.google.co.jp/search" target="_top">
+				<div class="ten mobile-three columns">
+					<input type="text" name="q" size="15" maxlength="255" value="Powered by Google" onClick="this.value='';">
+				</div>
+				<div class="two mobile-one columns">
+					<div class="button expand postfix">
+						<input type="image" src="/ErrPage/Message/images/icons/search.png" value="submit" alt="search">
+					</div>
+				</div>
+				<input type="hidden" name="sitesearch" value="http://www.umin.ac.jp">
+				<input type="hidden" name="domains" value="http://www.umin.ac.jp">
+				<input type="hidden" name="hl" value="ja">
+				<input type="hidden" name="num" value="20">
+				<input type="hidden" name="ie" value="utf8">
+				<input type="hidden" name="oe" value="utf8">
+			</form>
+		</div>
+	</div>
+</div>
+</header>
+
+<nav>
+<div class="row">
+<div class="twelve columns">
+<ul class="nav-bar">
+<li><a href="http://www.umin.ac.jp/"><img src="/ErrPage/Message/images/icons/gif/16x16/home.gif" alt="home"> ホーム</a></li>
+<li><a href="http://www.umin.ac.jp/ichiran/"><img src="/ErrPage/Message/images/icons/gif/16x16/arrow-alt-right.gif" alt="service"> サービス一覧</a></li>
+<li><a href="http://www.umin.ac.jp/umin/"><img src="/ErrPage/Message/images/icons/gif/16x16/about.gif" alt="about"> ＵＭＩＮ概要</a></li>
+
+<li><a href="http://www.umin.ac.jp/faq/"><img src="/ErrPage/Message/images/icons/gif/16x16/help.gif" alt="FAQ"> ＦＡＱ</a></li>
+<li><a href="http://www.umin.ac.jp/id/"><img src="/ErrPage/Message/images/icons/gif/16x16/id.gif" alt="ID"> ＩＤ取得</a></li>
+</ul>
+</div>
+</div>
+</nav>
+
+
+<div class="row">
+<div class="twelve columns text-a-underline" id="missing">
+
+
+<h2>404 Page not found</h2>
+<p>誠に申し訳ございませんが、お探しのページは見つかりませんでした。</p>
+
+
+
+<ul>
+	<li class="check">
+		アクセスいただきましたURLにタイプミスがないかご確認ください。
+	</li>
+	<li class="check">
+		平成25年4月以降ホームページリニューアルに伴い、ページの削除または移動した可能性がございます。ブックマークやショートカットを利用して
+		アクセスいただいた方は新しく作り直して頂きますようお願い致します。
+	</li>
+</ul>
+
+<h3>お手数ではございますが、以下のリンクからお求めのページをお探しください。</h3>
+
+<ul>
+	<li><a href="http://www.umin.ac.jp/">UMIN ホームページ</a></li>
+	<li><a href="http://www.umin.ac.jp/ichiran/">UMIN サービス一覧</a></li>
+	<li><a href="http://www.umin.ac.jp/faq/">UMIN FAQ</a></li>
+	<li><a href="http://www.umin.ac.jp/group-hp/">UMIN 一般公開ホームページサービス　団体一覧</a></li>
+	<li><a href="http://www.umin.ac.jp/personal-hp/">UMIN 一般公開ホームページサービス　個人一覧</a></li>
+	<li><a href="https://center6.umin.ac.jp/oasis.cgi">UMIN 大規模会員制ホームページサービス　OASIS一覧</a></li>
+	<li><a href="https://center6.umin.ac.jp/islet.cgi">UMIN 会員制ホームページサービス　ISLET一覧</a></li>
+</ul>
+
+</div>
+</div>
+
+<footer class="row">
+<div class="twelve columns">
+<div class="row">
+<div class="twelve columns">
+<p><img src="/ErrPage/Message/images/foot.gif" alt="footer"></p>
+</div>
+</div>
+</div>
+</footer>
+
+</body>
+<!-- InstanceEnd --></html>
