@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=980">
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta http-equiv="Content-Script-Type" content="text/javascript" />
+    <meta name="description" content="河原健二の学生個人ホームページです。" />
+    <meta name="keywords" content="河原健二, Kawahara Kenji, 広島大学, 情報科学部" />
+    <title>河原健二 Kawahara Kenji</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+    <script type="text/javascript" src="js/rollover2.js"></script>
+    <script type="text/javascript" src="js/jquery.cycle.all.js"></script>
+    <script type="text/javascript">
+        <!-- top-imageスライド -->
+        $(function () {
+            $('div#jquery-cycle').cycle({
+                speed: 1500,
+                timeout: 4500
+            });
+        });
+    </script>
+    <script>
+        $(function () {
+            hTop = $('#side_contents').offset().top;
+        });
+        $(window).scroll(function () {
+            if ($(window).scrollTop() > hTop - 35) {
+                $('#side_contents').css('position', 'fixed');
+                $('#side_contents').css('top', '20px');
+                $('#side_contents').css('margin-left', '0px');
+            } else {
+                $('#side_contents').css('position', 'static');
+                $('#side_contents').css('margin-left', '0px');
+            }
+        });
+    </script>
+
+    <script type="text/javascript">
+        $(function () {
+            $('#pageTop').hide(); // 「ページトップへ」の要素を隠す
+            $(window).scroll(function () { // スクロールした場合
+                if ($(this).scrollTop() > 100) { // スクロール位置が100を超えた場合
+                    $('#pageTop').fadeIn(); // 「ページトップへ」をフェードイン
+                } else { // スクロール位置が100以下の場合
+                    $('#pageTop').fadeOut(); // 「ページトップへ」をフェードアウト
+                }
+            });
+            $('#pageTop').click(function () { // 「ページトップへ」をクリックした場合
+                $('html,body').animate({ // ページトップにスクロール
+                    scrollTop: 0
+                }, 300);
+                return false;
+            });
+        });
+    </script>
+
+    <!-- og tag -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="FUKASE Yuko" />
+    <meta property="og:title" content="FUKASE Yuko" />
+    <meta property="fb:app_id" content="" />
+    <meta property="og:url" content="http://square.umin.ac.jp/fukase/" />
+    <meta property="og:description" content="河原健二の学生個人ホームページです。" />
+    <meta property="og:image" content="http://square.umin.ac.jp/fukase/images/opg.png" />
+
+
+</head>
+
+<body>
+    <div id="wrapper">
+
+        <div id="all_logo">
+            <a href="index.html"><img src="images/logo.png" alt="河原健二の学生個人ホームページです。" width="90" height="250"></a>
+        </div>
+
+
+        <div id="contents">
+
+
+            <div class="header_bg">
+                <div class="header">
+
+                    <div id="headerNavi1">
+                        <p>河原健二の学生個人ホームページです。</p>
+                    </div>
+                    <div id="headerNavi2">
+                        <ul id="menu">
+                            <li><a href="achievements.html"><img src="images/menu2.png" alt="業績一覧" width="115"
+                                        height="35"></a></li>
+                            <li><a href="profile.html"><img src="images/menu3.png" alt="プロフィール" width="128"
+                                        height="35"></a></li>
+                        </ul>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <!-- /#header -->
+            </div>
+            <!-- /#header_bg -->
+
+
+            <div class="index_contents">
+                <div class="index_visual">
+                    <div id="jquery-cycle">
+                        <img src="images/index_photo1.jpg" alt="トップページ画像1" width="760" height="400">
+                        <img src="images/index_photo2.jpg" alt="トップページ画像2" width="760" height="400">
+                        <img src="images/index_photo3.jpg" alt="トップページ画像2" width="760" height="400">
+                        <img src="images/index_photo4.jpg" alt="トップページ画像4" width="760" height="400">
+                    </div>
+                </div>
+                <div class="index_content_box_a clearfix">
+                    <p class="index_content_title"><img src="images/index_content_title1.png" alt="About This Site"
+                            width="760" height="46"></p>
+
+                    河原健二（広島大学情報科学部）の学生個人のホームページです。<br /> 情報科学の勉強を頑張っています。
+                    <br />
+
+                </div>
+
+                <div class="index_content_box_b_left clearfix">
+                    <p class="index_content_title"><img src="images/index_content_title2.png" alt="Contact" width="460"
+                            height="46"></p>
+                    <p class=""><a href="https://goo.gl/maps/SJmJu" target="_blank">〒739-8527<br />
+                            広島県東広島市鏡山一丁目4番1号<br />
+                            広島大学情報科学部</a><br /> MAIL: <a
+                            href="mailto:ken.kawahara0422@gmail.com">ken.kawahara0422@gmail.com</a> / <a
+                            href="mailto:ken.kawahara0422@hiroshima-u.ac.jp">ken.kawahara0422@hiroshima-u.ac.jp</a><br />
+                        URL: <a href="http://square.umin.ac.jp/fukase"
+                            target="_blank">http://square.umin.ac.jp/fukase</a></p>
+                </div>
+
+                <div class="index_content_box_b_right clearfix">
+                    <p class="index_content_title"><img src="images/index_content_title3.png" alt="Link" width="280"
+                            height="46"></p>
+                    <a href="https://www.hiroshima-u.ac.jp/ids" target="_blank"><img src="images/link1_kitasato.jpg"
+                            class="margin20" alt="北里大学医療衛生学部" width="250" height="80"></a>
+                </div>
+
+
+
+            </div>
+            <!-- main_contentsここまで -->
+
+
+
+
+        </div>
+        <!-- /#contents -->
+
+
+        <div id="back_bloom">
+            <img src="images/back_bloom.png" alt="" width="1350" height="800">
+        </div>
+        <!-- /#pageTop -->
+
+
+
+    </div>
+    <!-- /#wrapper -->
+
+
+
+
+
+
+
+    <div class="footer_wrap">
+        <div class="footer1">
+            <div class="footer_nav">
+                <p class="footer_nav_title"><a href="index.html"><img src="images/footer_logo.png" alt="深瀬裕子WEB SITE"
+                            width="174" height="23"></a></p>
+            </div>
+            <div class="footer_nav">
+                <p class="footer_nav_title"><a href="achievements.html"><img src="images/footer_menu2.png" alt="業績一覧"
+                            width="64" height="23"></a></p>
+            </div>
+            <div class="footer_nav">
+                <p class="footer_nav_title"><a href="profile.html"><img src="images/footer_menu3.png" alt="プロフィール"
+                            width="75" height="23"></a></p>
+            </div>
+            <div class="footer_nav_last">
+                <div class="copyright">Copyright (c) FUKASE Yuko.All rights reserved.</div>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <!-- /#footer1 -->
+
+    </div>
+    <!-- /#footer_wrap -->
+
+</body>
+
+</html>
